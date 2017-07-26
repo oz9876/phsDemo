@@ -1,0 +1,85 @@
+body{
+  margin:0;
+  padding:0;
+  background-color: #D2D8DE;
+  letter-spacing:3px;
+}
+p{
+  margin:0;
+}
+.App {
+  font-size: 25px;
+  
+}
+.App input{
+  letter-spacing:3px;
+  font-size: 20px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: dimgrey;
+  border-radius: 4px;
+  width: 56%;
+  padding: 2px;
+}
+.App button{
+  letter-spacing:3px;
+  font-size: 20px;
+}
+
+.list{
+  min-height: 70vh;
+}
+.list2{
+    font-size: medium;
+    margin-top: 50px;
+}
+.add-button{
+  background: #FEA914;
+  margin: 0 auto;
+  color: white;
+  border-style: none;
+  border-radius: 5px;
+  padding: 8px;
+
+}
+.app-body{
+  margin:1rem;
+  margin-top: 3rem;
+  padding: 1rem;
+  background-color:white;
+  border-radius: 10px;
+}
+.add-div{
+  border-top-width: 1px;
+  border-top-style: solid;
+  padding-top: 15px;
+  margin-top: 15px;
+  text-align: right;
+}
+.run-div{
+  width:100%;
+  text-align: center;
+}
+.reset-button{
+    margin: 0 5px;
+    color: #fe144b;
+    background-color: #d2d8de;
+    border-style: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+}
+.run-button{
+  margin: 0 5px;
+  color: white;
+  background-color: #24DE1D;
+  border-style: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+}
+.del-button{
+  margin-left:20px;
+}
+/*.run-button:hover{
+  color: white;
+  background-color: #008400;
+}*/
