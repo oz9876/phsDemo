@@ -69,10 +69,10 @@ class App extends Component {
     let sum1=0;
     let sum2=0;
     for(let i=0; i<num ; i++){
-      sum1+= this.state.tagList2[i];
+      sum1+= this.state.tagList2[i]*10000;
     }
     for(let i=num+1; i<len ; i++){
-      sum2+= this.state.tagList2[i];
+      sum2+= this.state.tagList2[i]*10000;
     }
     if(sum1==sum2){
       this.theNum.push(num);
