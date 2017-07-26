@@ -1,12 +1,14 @@
-����̣�
-	1.npm̫������ѡ�ð���ϵtnpm���д
+搭建过程：
+	1.npm太慢，故选用阿里系tnpm进行搭建
 		$ tnpm install -g create-react-app
 		$ create-react-app my-demo-1
-	2.���ǵ�demo�����ٶȵ�ԭ��my-demo-1�ݲ�����·�ɡ�UI�⡢redux�ȣ�����ο���plus�汾�������ڴ�
-
-˼·��
-	1.ƽ����������0�����
-	2.δָ���������ͣ����ܰ�������������
-	3.js���������㲻׼ȷ����Ҫת�������������㡣
-	4.���鳤��С�ڵ���2ʱ��������ƽ��λ
-	5.��һλ�͵�length-1λ������ƽ��λ
+	2.考虑到demo运行速度等原因，my-demo-1暂不引入路由、UI库、redux等，如需参看其plus版本，敬请期待
+运行方式：
+	1.npm start
+	2.浏览器会自动弹出localhost:3000,如果编译报错，请查看3000端口是否被占用
+思路：
+	1.平衡数数量是0到多个
+	2.未指定数据类型，可能包含非数字类型
+	3.js浮点数运算不准确，需要转成整数进行运算。
+	4.数组长度小于等于2时，不存在平衡位
+	5.第一位和第length-1位不能是平衡位
