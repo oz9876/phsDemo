@@ -70,10 +70,11 @@ class App extends Component {
 
     let sum1=0;
     for(let i=1; i<len-1 ; i++){
+              sum1+= this.state.tagList2[i-1];
+
       if(sum1*2 + this.state.tagList2[i] === sum){
-        this.theNum.push(num);
+        this.theNum.push(i);
       }
-        sum1+= this.state.tagList2[i];
     }
   }
   render() {
