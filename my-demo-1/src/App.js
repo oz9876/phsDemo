@@ -52,9 +52,8 @@ class App extends Component {
       return;
     }
     //第2到n-1可能为平衡数
-    for(let i=1; i<this.state.tagList2.length-1;i++){
-      this.getTheNum(i)
-    }
+      this.getTheNum();
+
     alert(
       "平衡数游标："
       +this.theNum.join("，")
@@ -63,21 +62,18 @@ class App extends Component {
     );
 
   }
-  getTheNum(num){
+  getTheNum(){
     //假设num元素为平衡数
     const len = this.state.tagList2.length;
+
+    const sum = this.state.tagList2.reduce((a,b)=>a+b,0);
+
     let sum1=0;
-    let sum2=0;
-    for(let i=0; i<num ; i++){
-      sum1+= this.state.tagList2[i]*10000;
-    }
-    for(let i=num+1; i<len ; i++){
-      sum2+= this.state.tagList2[i]*10000;
-    }
-    if(sum1==sum2){
-      this.theNum.push(num);
-      sum1=0;
-      sum2=0;
+    for(let i=1; i<len-1 ; i++){
+      if(sum1*2 + this.state.tagList2[i] === sum){
+        this.theNum.push(num);
+      }
+        sum1+= this.state.tagList2[i];
     }
   }
   render() {
